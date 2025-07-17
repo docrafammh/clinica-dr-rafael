@@ -17,7 +17,7 @@ export default function HeroSection() {
         </p>
         <button className={styles.ctaButton}>
           <span className={styles.ctaBold}>Quero fazer minha</span><br />
-          <span className={styles.ctaNormal}>análise vibracional</span>
+          <span className={styles.ctaBold}>análise vibracional</span>
         </button>
       </section>
       <section className={styles.rightContent}>
