@@ -24,6 +24,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
