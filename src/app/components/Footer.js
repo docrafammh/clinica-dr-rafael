@@ -4,17 +4,17 @@ export default function Footer() {
   return (
     <footer className={styles.footerSection}>
       <div className={styles.footerContent}>
-        <div className={styles.footerLeft}>
-          <div className={styles.footerLogo}>RIGATTI</div>
-          <div className={styles.footerTagline}>DESPERTE SUA FORÇA REAL</div>
-        </div>
-        <div className={styles.footerRight}>
-          <div className={styles.footerPhone}>(47) 3170-4177</div>
-          <div className={styles.footerAddress}>
-            Rua 2950, 117 - Centro<br />
-            Balneário Camboriú, SC
-          </div>
-        </div>
+        <h2>Sua próxima fase começa agora</h2>
+        <button className={styles.ctaButton}><span className={styles.ctaBold}>Quero fazer minha análise gratuita</span></button>
+        <form>
+          <input type="text" placeholder="Nome" required/>
+          <input type="tel" placeholder="WhatsApp" required/>
+          <input type="text" placeholder="Cidade" required/>
+          <input type="text" placeholder="Profissão" />
+          <input type="text" placeholder="Objetivo principal" />
+          <input type="number" placeholder="Quanto está disposto a investir?" />
+          <button type="submit" className={styles.ctaButton}><span className={styles.ctaBold}>Finalizar e ir para o WhatsApp</span></button>
+        </form>
       </div>
     </footer>
   );

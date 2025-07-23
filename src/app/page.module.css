@@ -1,6 +1,6 @@
 .page {
   min-height: 100vh;
-  background: linear-gradient(120deg, #e0e4ec 0%, #bfc3d1 100%);
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
@@ -14,7 +14,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(60, 60, 60, 0.85);
+  background: rgba(76, 76, 76, 0.85);
+  backdrop-filter: blur(10px);
   border-radius: 0 0 40px 40px;
   padding: 32px 48px 24px 48px;
   margin: 0 auto;
@@ -23,6 +24,13 @@
   position: fixed;
   top: 0;
   z-index: 999;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
 }
 
 .logoSection {
@@ -74,9 +82,9 @@
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
-  padding: 48px 24px 0 24px;
+  padding: 0px 24px 0 24px;
   gap: 32px;
-  margin-top: 150px;
+  margin-top: 100px;  
 }
 
 .leftContent {
@@ -105,6 +113,13 @@
   line-height: 1.15;
 }
 
+.mainHeadingGold {
+  font-family: 'Georgia', serif;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #e6c97a;
+}
+
 .paragraph {
   font-size: 1.1rem;
   color: #444;
@@ -112,14 +127,14 @@
 }
 
 .ctaButton {
-  background: linear-gradient(90deg, #fff7c2 0%, #f7e7b6 100%);
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
   border: none;
   border-radius: 32px;
   padding: 16px 32px;
   font-size: 1.1rem;
   font-family: inherit;
   font-weight: 600;
-  color: #222;
+  color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   cursor: pointer;
   margin-top: 8px;
@@ -127,7 +142,7 @@
 }
 
 .ctaButton:hover {
-  background: linear-gradient(90deg, #ffe9a7 0%, #f7e7b6 100%);
+  background: linear-gradient(90deg, #059669 0%, #047857 100%);
 }
 
 .ctaBold {
@@ -146,8 +161,6 @@
 }
 
 .heroImage {
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
   object-fit: cover;
   width: 100%;
   max-width: 400px;
@@ -212,13 +225,14 @@
   font-family: 'Georgia', serif;
   font-size: 2.2rem;
   font-weight: 400;
-  margin: 80px 0 16px 0;
+  margin: 0 0 46px 0;
   letter-spacing: 0.04em;
+  color: #e6c97a;
 }
 
 .symptomsSubtext {
   font-size: 1.2rem;
-  margin-bottom: 46px;
+  margin-bottom: 16px;
 }
 
 .symptomsGrid {
@@ -238,11 +252,12 @@
 }
 
 .symptomIcon {
-  font-size: 2rem;
-  color: #e6c97a;
+  font-size: 1.2rem;
+  color: #10b981;
   display: inline-block;
-  min-width: 2.2rem;
+  min-width: 1.5rem;
   text-align: center;
+  margin-right: 8px;
 }
 
 .symptomsFeatures {
@@ -266,7 +281,7 @@
 
 .symptomsFeaturesTitle {
   font-family: 'Georgia', serif;
-  font-size: 2.3rem;
+  font-size: 1.9rem;
   font-weight: 400;
   color: #fff;
   margin: 0 auto 100px auto;
@@ -304,10 +319,11 @@
 }
 
 .symptomsFeatureImg {
-  width: 600px;
-  height: 300px;
+  width: 400px;
+  height: 200px;
   object-fit: cover;
   box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  border-radius: 12px;
 }
 
 .symptomsFeatureTextGroup {
@@ -319,28 +335,35 @@
 
 .symptomsFeatureText {
   color: #fff;
-  font-size: 26px;
+  font-size: 20px;
   margin: 0;
-  max-width: 300px;
+  max-width: 400px;
 }
 
+.symptomsFeatureTextGold {
+  color: #e6c97a;
+  font-size: 20px;
+  margin: 0;
+  max-width: 400px;
+}
 .symptomsFeatureButton {
-  background: linear-gradient(90deg, #e6c97a 0%, #fffbe6 100%);
-  color: #222;
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
   border: none;
   border-radius: 32px;
-  padding: 12px 28px;
-  font-size: 1.05rem;
+  padding: 18px 48px;
+  font-size: 1.1rem;
   font-family: inherit;
   font-weight: 600;
+  color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   cursor: pointer;
+  margin: 0 auto;
   transition: background 0.2s;
-  margin-top: 8px;
+  margin-bottom: 12px;
 }
 
 .symptomsFeatureButton:hover {
-  background: linear-gradient(90deg, #fffbe6 0%, #e6c97a 100%);
+  background: linear-gradient(90deg, #059669 0%, #047857 100%);
 }
 
 @media (max-width: 900px) {
@@ -365,117 +388,240 @@
   }
 }
 
-.processSection {
+/* --- NOVAS CLASSES PARA O MÉTODO M.U.D.A.R --- */
+.metodoSection {
   background: #f4f4f4;
   padding: 72px 0 64px 0;
   color: #222;
   text-align: center;
 }
 
-.processContent {
+.metodoContent {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
-.processTitle {
+.metodoTitle {
   font-family: 'Georgia', serif;
   font-size: 2.1rem;
   font-weight: 400;
-  margin-bottom: 38px;
+  margin-bottom: 28px;
   letter-spacing: 0.08em;
 }
 
-/* .processSteps {
-  font-size: 1.35rem;
-  margin-bottom: 48px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: flex-start;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
-.processSteps {
-  font-size: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  font-family: 'Georgia', serif;
+.metodoHighlight {
+  color: #e6c97a;
+  font-weight: 600;
 }
 
-.processStepGold {
-  color: #bfa16a;
+.metodoText {
+  font-size: 1.18rem;
+  color: #444;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.metodoGold {
+  color: #e6c97a;
+  font-weight: 600;
+}
+
+.metodoGold b {
+  color: #000000;
+  font-weight: bold;
+}
+
+.metodoLista {
+  text-align: left;
+  margin: 0 auto 32px auto;
+  max-width: 700px;
+  font-size: 1.13rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metodoDestaque {
+  color: #e6c97a;
+  font-size: 1.15rem;
   font-weight: 500;
-  font-size: 1.18em;
+  margin: 32px 0 24px 0;
+  line-height: 1.5;
 }
 
-.processSubtitle {
-  font-family: 'Georgia', serif;
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin: 64px 0 32px 0;
-  letter-spacing: 0.12em;
-}
-
-
-.processGrid {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 32px;
-}
-
-.processFeature {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.metodoButton {
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+  border: none;
+  border-radius: 32px;
+  padding: 16px 36px;
   font-size: 1.1rem;
-  color: #222;
-  min-width: 180px;
+  font-family: inherit;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  margin-top: 18px;
+  transition: background 0.2s;
 }
 
-.processIcon {
-  font-size: 2.2rem;
-  color: #bfa16a;
-  margin-bottom: 4px;
+.metodoButton:hover {
+  background: linear-gradient(90deg, #059669 0%, #047857 100%);
 }
 
-.processFeatureText {
-  font-family: 'Georgia', serif;
-  font-size: 1.08rem;
-  color: #222;
-  letter-spacing: 0.08em;
+/* Responsividade */
+@media (max-width: 600px) {
+  .metodoSection {
+    padding: 40px 0 24px 0;
+  }
+  .metodoTitle {
+    font-size: 1.3rem;
+  }
+  .metodoText {
+    font-size: 1rem;
+  }
+  .metodoLista {
+    font-size: 1rem;
+    max-width: 98vw;
+  }
+  .metodoDestaque {
+    font-size: 1rem;
+  }
+  .metodoButton {
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+}
+
+/* --- FIM DAS NOVAS CLASSES --- */
+
+/* --- ESTILOS PARA DEPOIMENTOS COM IMAGEM E TEXTO --- */
+.depoimentoImgWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 18px;
+}
+
+.depoimentoImg {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(191,161,106,0.10);
+  border: 3px solid #e6c97a;
+  background: #fff;
+}
+
+.depoimentoTexto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.depoimentoTexto p {
+  font-size: 1.08rem;
+  color: #444;
+  font-style: italic;
+  margin: 0 0 4px 0;
+  line-height: 1.5;
+  max-width: 260px;
+}
+
+.depoimentoNome {
+  color: #e6c97a;
+  font-family: 'Georgia', serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.depoimentosCard {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+  margin: 0 0.5em;
+  transform: scale(0.85);
+  opacity: 0.6;
+  transition: transform 0.3s, opacity 0.3s, box-shadow 0.3s;
+  z-index: 1;
+  overflow: hidden;
+  width: 220px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 12px 18px 12px;
+}
+
+.depoimentosCardCenter {
+  transform: scale(1.08);
+  opacity: 1;
+  box-shadow: 0 8px 32px rgba(191,161,106,0.18), 0 2px 16px rgba(0,0,0,0.12);
+  z-index: 2;
+  width: 320px;
+  height: 380px;
+}
+
+@media (max-width: 900px) {
+  .depoimentosCardCenter {
+    width: 220px;
+    height: 320px;
+  }
+  .depoimentosCard {
+    width: 120px;
+    height: 180px;
+    padding: 12px 4px 8px 4px;
+  }
+  .depoimentoImg {
+    width: 60px;
+    height: 60px;
+  }
+  .depoimentoTexto p {
+    font-size: 0.95rem;
+    max-width: 120px;
+  }
 }
 
 @media (max-width: 600px) {
-  .processSection {
-    padding: 48px 0 32px 0;
+  .depoimentosSliderWrapper {
+    gap: 8px;
   }
-  .processTitle {
-    font-size: 1.3rem;
+  .depoimentosCardCenter {
+    width: 120px;
+    height: 180px;
   }
-  .processSteps {
-    font-size: 1rem;
-    max-width: 100%;
+  .depoimentosCard {
+    width: 60px;
+    height: 90px;
+    padding: 4px 2px 4px 2px;
   }
-  .processSubtitle {
-    font-size: 1.1rem;
+  .depoimentoImg {
+    width: 36px;
+    height: 36px;
   }
-  .processGrid {
-    grid-template-columns: 1fr;
-    gap: 24px;
+  .depoimentoTexto p {
+    font-size: 0.8rem;
+    max-width: 60px;
+  }
+  .depoimentoNome {
+    font-size: 0.7rem;
   }
 }
+/* --- FIM DOS ESTILOS DEPOIMENTOS --- */
 
 .depoimentosSection {
   background: #f4f4f4;
   padding: 64px 0 72px 0;
   text-align: center;
   position: relative;
+  border-bottom-left-radius: 64px;
+  border-bottom-right-radius: 64px;
+  margin-bottom: -64px;
 }
 
 .depoimentosTitleContainer {
@@ -655,6 +801,16 @@
   }
 }
 
+.aboutTitle {
+  font-family: 'Georgia', serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+  text-align: center;
+  color: #222;
+  margin-top: 64px;
+  margin-bottom: 32px;
+}
+
 .aboutSection {
   display: flex;
   align-items: center;
@@ -681,7 +837,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0;
+  border-radius: 16px;
   box-shadow: 0 4px 32px rgba(0,0,0,0.10);
   z-index: 1;
 }
@@ -744,7 +900,7 @@
   color: #fff;
   text-align: center;
   position: relative;
-  margin-top: 0;
+  margin-top: -64px;
 }
 
 .faqIntroContent {
@@ -767,14 +923,14 @@
 }
 
 .faqIntroButton {
-  background: linear-gradient(90deg, #fff7c2 0%, #bfa16a 100%);
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
   border: none;
   border-radius: 32px;
   padding: 18px 48px;
   font-size: 1.1rem;
   font-family: inherit;
   font-weight: 600;
-  color: #222;
+  color: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   cursor: pointer;
   margin: 0 auto;
@@ -783,7 +939,7 @@
 }
 
 .faqIntroButton:hover {
-  background: linear-gradient(90deg, #ffe9a7 0%, #bfa16a 100%);
+  background: linear-gradient(90deg, #059669 0%, #047857 100%);
 }
 
 .faqIntroSubtitle {
@@ -810,12 +966,33 @@
   display: flex;
   flex-direction: column;
   padding: 0 20%;
+  align-items:baseline;
 }
 
 .faqItem {
   padding: 0 0 24px 0;
-  border-bottom: 1.5px solid #bfa16a;
   margin-bottom: 0;
+  width: 100%;
+}
+
+.faqItem details {
+  width: 100%;
+  text-align: left;
+}
+
+.faqItem summary {
+  text-align: left;
+  cursor: pointer;
+  list-style: none; /* remove a setinha padrão */
+  padding: 8px 0;
+  display: block;
+  border-bottom: 1.5px solid #bfa16a;
+  font-family: 'Georgia', serif;
+  font-size: 2rem;
+  color: #fff;
+  margin: 32px 0 12px 0;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 .faqQuestion {
@@ -876,12 +1053,10 @@
 }
 
 .footerContent {
-  max-width: 1100px;
   width: 100%;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   gap: 32px;
   padding: 32px;
   position: relative;
@@ -901,48 +1076,46 @@
   background: #888;
 }
 
-.footerLeft {
+.footerContent h2 {
+  font-family: 'Georgia', serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.footerContent form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  min-width: 220px;
+  align-items: center;
+  gap: 32px;
+  margin-top: 32px;
+  width: 60%;
 }
 
-.footerLogo {
-  font-family: 'Georgia', serif;
-  font-size: 2.6rem;
-  font-weight: bold;
+.footerContent form input {
+  width: 100%;
+  padding: 12px 0 12px 0;
+  border: none;
+  border-bottom: 1px solid #888;
+  background: transparent;
   color: #fff;
-  letter-spacing: 0.18em;
-  margin-bottom: 4px;
-}
-
-.footerTagline {
-  font-size: 1rem;
-  color: #fff;
-  letter-spacing: 0.08em;
-  margin-top: 2px;
-}
-
-.footerRight {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  color: #fff;
-  font-family: 'Georgia', serif;
-  font-size: 1.2rem;
-  gap: 4px;
-}
-
-.footerPhone {
-  font-size: 1.2rem;
-  margin-bottom: 2px;
-}
-
-.footerAddress {
   font-size: 1.1rem;
-  text-align: right;
-  line-height: 1.3;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.footerContent form input::placeholder {
+  color: #888;
+}
+
+.footerContent form input:focus {
+  outline: none;
+  border-bottom: 1px solid #fff;
+}
+
+.footerContent form input:focus::placeholder {
+  color: transparent;
 }
 
 @media (max-width: 700px) {
@@ -952,17 +1125,168 @@
     gap: 18px;
     padding: 0 8vw;
   }
-  .footerLeft, .footerRight {
+
+  .footerContent form {
+    width: 100%;
+  }
+  
+}
+
+/* Estilos para responsividade do Header */
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.mobileMenuButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobileNav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(60, 60, 60, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 20px 20px;
+  padding: 20px 0;
+  flex-direction: column;
+  gap: 16px;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.mobileNavOpen {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobileNav a {
+  color: #bdbdbd;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 12px 24px;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+  text-align: center;
+}
+
+.mobileNav a:hover, 
+.mobileNav .active {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .header {
+    padding: 20px 24px 16px 24px;
+    width: 95%;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .tagline {
+    font-size: 0.75rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .mobileMenuButton {
+    display: block;
+  }
+
+  .mobileNav {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 16px 20px 12px 20px;
+    width: 98%;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .tagline {
+    font-size: 0.7rem;
+  }
+}
+
+/* Responsividade para HeroSection */
+@media (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 20px 0 20px;
+    gap: 24px;
+  }
+
+  .leftContent {
+    max-width: 100%;
     align-items: center;
+  }
+
+  .mainHeading {
+    font-size: 2.2rem;
     text-align: center;
   }
-  .footerLogo {
-    font-size: 1.5rem;
+
+  .smallHeading {
+    font-size: 1rem;
+    text-align: center;
   }
-  .footerTagline {
+
+  .paragraph {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .rightContent {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContent {
+    padding: 24px 16px 0 16px;
+    gap: 20px;
+  }
+
+  .mainHeading {
+    font-size: 1.8rem;
+  }
+
+  .smallHeading {
     font-size: 0.9rem;
   }
-  .footerPhone, .footerAddress {
+
+  .paragraph {
+    font-size: 0.95rem;
+  }
+
+  .ctaButton {
+    padding: 14px 28px;
     font-size: 1rem;
   }
 }

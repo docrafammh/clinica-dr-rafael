@@ -1,34 +1,20 @@
 import styles from '../page.module.css';
+import { FaCheck } from "react-icons/fa6";
+import Image from 'next/image';
 
 export default function SymptomsSection() {
   return (
     <section id='symptoms' className={styles.symptomsSection}>
       <div className={styles.symptomsContent}>
-        <h2 className={styles.symptomsTitle}>
-          Agora, precisamos escutar além das palavras.
-        </h2>
-        <p className={styles.symptomsText}>
-          Antes de qualquer tratamento, precisamos sentir sua jornada.<br />
-          Cada passo seu carrega histórias, dores, desejos.<br />
-          <br />
-          Este é um momento de escuta. De conexão. De clareza.
-        </p>
-        <div className={styles.symptomsDividerRow}>
-          <span className={styles.symptomsDivider} />
-          <h4 className={styles.symptomsh4}>Prosseguir para minha análise</h4>
-          <span className={styles.symptomsDivider} />
-        </div>
-        <h3 className={styles.symptomsSubtitle}>VOCÊ NÃO ESTÁ AQUI POR ACASO.</h3>
-        <p className={styles.symptomsSubtext}>Se você sente:</p>
+        <p className={styles.symptomsSubtext}>Se você sente essas</p>
+        <h3 className={styles.symptomsSubtitle}>Dores...</h3>
         <div className={styles.symptomsGrid}>
-          <div className={styles.symptom}><span className={styles.symptomIcon}>💤</span> Cansaço constante</div>
-          <div className={styles.symptom}><span className={styles.symptomIcon}>😴</span> Insônia</div>
-          <div className={styles.symptom}><span className={styles.symptomIcon}>🧑‍🦱</span> Inchaço</div>
-          <div className={styles.symptom}><span className={styles.symptomIcon}>💔</span> Perda de libido</div>
-          <div className={styles.symptom}><span className={styles.symptomIcon}>🍽️</span> Ansiedade ou compulsão alimentar</div>
-          <div className={styles.symptom}><span className={styles.symptomIcon}>📉</span> Dificuldade para emagrecer</div>
-          <div className={styles.symptom}><span className={styles.symptomIcon}>🧑‍🦲</span> Queda de cabelo</div>
-          <div className={styles.symptom}><span className={styles.symptomIcon}>🐢</span> Metabolismo lento</div>
+          <div className={styles.symptom}><Image src="/cansaco-constante-icon-removebg.png" alt="Cansaço constante" width={60} height={60} /> Cansaço constante</div>
+          <div className={styles.symptom}><Image src="/insonia-icon-removebg-preview.png" alt="Insônia" width={60} height={60} /> Ansiedade ou insônia</div>
+          <div className={styles.symptom}><Image src="/inchaco-icon-removebg-preview.png" alt="Inchaço" width={60} height={60} /> Inchaço</div>
+          <div className={styles.symptom}><Image src="/baixa-libido-icon-removebg-preview.png" alt="Baixa libido" width={60} height={60} /> Baixa libido</div>
+          <div className={styles.symptom}><Image src="/compulsao-alimentar-icon-removebg-preview.png" alt="Ansiedade" width={60} height={60} /> Compulsão alimentar</div>
+          <div className={styles.symptom}><Image src="/dificuldade-emagrecer-icon-removebg-preview.png" alt="Dificuldade para emagrecer" width={60} height={60} /> Dificuldade para emagrecer</div>
         </div>
       </div>
       <div className={styles.symptomsFeatures}>
@@ -37,52 +23,62 @@ export default function SymptomsSection() {
             ... SEU CORPO ESTÁ PEDINDO SOCORRO ...
           </span>
           <h2 className={styles.symptomsFeaturesTitle}>
-            Isso NÃO é normal. <span className={styles.symptomsFeaturesNormal}>É sua bioquímica tentando falar com você. Aqui, nós escutamos.</span>
+            Você <b>NÃO</b> está saudável. É o seu corpo tentando falar com você.<br></br>
+            E aqui, nós te escutamos.
           </h2>
         </div>
         <div className={styles.symptomsFeatureBlocks}>
           <div className={styles.symptomsFeatureBlock}>
             <img
-              src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=500&h=300&q=80"
+              src="/process1.png"
               alt="Mulher sorrindo"
               className={styles.symptomsFeatureImg}
             />
             <div className={styles.symptomsFeatureTextGroup}>
+              <p className={styles.symptomsFeatureTextGold}>
+                Se você sente cançada, mesmo quando acabou de acordar?
+              </p>
               <p className={styles.symptomsFeatureText}>
-                Se você sente que está exausta, emocionalmente ou fisicamente:
+                Esse não é o seu normal, e dá pra virar essa chave com um método que respeita o seu tempo.
               </p>
               <button className={styles.symptomsFeatureButton}>
-                <b>Quero reencontrar minha autoestima.</b>
+                <b>Fazer minha análise gratuita agora</b>
               </button>
             </div>
           </div>
           <div className={styles.symptomsFeatureBlock}>
             <img
-              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=facearea&w=500&h=300&q=80"
-              alt="Mulher trabalhando"
+              src="/process2.png"
+              alt="Mulher olhando para o lado"
               className={styles.symptomsFeatureImg}
             />
             <div className={styles.symptomsFeatureTextGroup}>
+              <p className={styles.symptomsFeatureTextGold}>
+                Cansada de se sentir exausta todos os dias? por dentro e por fora?
+              </p>
               <p className={styles.symptomsFeatureText}>
-                Se você busca performance e clareza mental:
+                Pode ser que o seu corpo esteja pedindo por algo mais profundo do que uma simples dieta.
               </p>
               <button className={styles.symptomsFeatureButton}>
-                <b>Quero transformar meu metabolismo</b>
+                <b>Fazer minha análise gratuita agora</b>
               </button>
             </div>
           </div>
           <div className={styles.symptomsFeatureBlock}>
             <img
-              src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=500&h=300&q=80"
-              alt="Mulher sorrindo"
+              src="/process3.png"
+              alt="Mulher se olhando no espelho"
               className={styles.symptomsFeatureImg}
             />
             <div className={styles.symptomsFeatureTextGroup}>
+              <p className={styles.symptomsFeatureTextGold}>
+                Tem dias em que a exaustão vem até quando a gente não fez nada?
+              </p>
               <p className={styles.symptomsFeatureText}>
-                Se você sente que se perdeu de si mesma:
+                Seu corpo está pedindo socorro. E sim, existe um caminho mais leve para viver com energa.
               </p>
               <button className={styles.symptomsFeatureButton}>
-                <b>Quero voltar a me reconhecer</b>
+                <b>Fazer minha análise gratuita agora</b>
               </button>
             </div>
           </div>

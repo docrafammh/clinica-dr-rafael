@@ -2,39 +2,35 @@
 import { useState } from 'react';
 import styles from '../page.module.css';
 
-const videos = [
+const depoimentos = [
   {
-    title: 'Bruna',
-    url: 'https://www.youtube.com/embed/ysz5S6PUM-U',
+    nome: 'Anônimo',
+    texto: 'Vocês são sensacionais, estão me ajudando a mudar a minha vida, minha história, agradeço a Deus todos os dias por ter colocado vocês em meu caminho. E muito mais que ouvir você ajuda a dar um norte, a ajudar a voltar pros trilhos e ter uma qualidade de vida muito melhor. Já se foram 20kg em 90 dias. Só tenho a agradecer a você e todos da clínica. Que Deus abençoe a vida de vocês!'
   },
   {
-    title: 'Daniele',
-    url: 'https://www.youtube.com/embed/jNQXAC9IVRw',
+    nome: 'Sandra Cristina',
+    texto: 'O Dr. Rafael e sua equipe trazem muita segurança e resultados muito além das expectativas, pois investigam, com perspectiva integralista, com total comprometimento à saúde do indivíduo. Sendo assim, trata o corpo e mente como uma unidade. Observa todas as partes pra otimizar o funcionamento do todo. Indico sempre a clínica pois é um aprendizado de si mesmo pra toda vida.'
   },
   {
-    title: 'Alexsandro',
-    url: 'https://www.youtube.com/embed/tgbNymZ7vqY',
+    nome: 'Karis Regina Brunetto Cozer',
+    texto: 'Atendimento incrível! E após apenas um mês de tratamento (personalizado para mim) eu já começo ver resultados. Indico para todo mundo!'
   },
   {
-    title: 'André',
-    url: 'https://www.youtube.com/embed/ScMzIvxBSi4',
-  },
-  {
-    title: 'Paula',
-    url: 'https://www.youtube.com/embed/aqz-KE-bpKQ',
+    nome: 'mariana frigeri',
+    texto: 'Amo esse lugar! Profissionalismo, atendimento individualizado, personalizado e que supera qualquer expectativa.'
   },
 ];
 
 export default function DepoimentosSection() {
   const [current, setCurrent] = useState(0);
 
-  const prev = () => setCurrent((prev) => (prev - 1 + videos.length) % videos.length);
-  const next = () => setCurrent((prev) => (prev + 1) % videos.length);
+  const prev = () => setCurrent((prev) => (prev - 1 + depoimentos.length) % depoimentos.length);
+  const next = () => setCurrent((prev) => (prev + 1) % depoimentos.length);
 
-  // Get 3 videos: center, left, right
+  // Get 3 depoimentos: center, left, right
   const getIndices = () => {
-    const left = (current - 1 + videos.length) % videos.length;
-    const right = (current + 1) % videos.length;
+    const left = (current - 1 + depoimentos.length) % depoimentos.length;
+    const right = (current + 1) % depoimentos.length;
     return [left, current, right];
   };
   const [leftIdx, centerIdx, rightIdx] = getIndices();
@@ -56,23 +52,17 @@ export default function DepoimentosSection() {
                   : styles.depoimentosCard
               }
             >
-              <iframe
-                width="320"
-                height="480"
-                src={videos[idx].url}
-                title={videos[idx].title}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+              <div className={styles.depoimentoTexto}>
+                <p>"{depoimentos[idx].texto}"</p>
+                <span className={styles.depoimentoNome}>- {depoimentos[idx].nome}</span>
+              </div>
             </div>
           ))}
         </div>
         <button className={styles.depoimentosArrow} onClick={next} aria-label="Próximo">&#62;</button>
       </div>
-      <div className={styles.depoimentosLabel}>{videos[centerIdx].title}</div>
       <div className={styles.depoimentosDots}>
-        {videos.map((_, idx) => (
+        {depoimentos.map((_, idx) => (
           <span
             key={idx}
             className={

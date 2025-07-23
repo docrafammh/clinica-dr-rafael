@@ -2,26 +2,27 @@ import styles from '../page.module.css';
 
 export default function AboutSection() {
   return (
-    <section id="about" className={styles.aboutSection}>
-      <div className={styles.aboutImageWrapper}>
-        <img
-          src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=500&h=600&q=80"
-          alt="Dr. Luiz Henrique Rigatti"
-          className={styles.aboutImage}
-        />
-      </div>
-      <div className={styles.aboutTextWrapper}>
-        <blockquote className={styles.aboutQuote}>
-          “Eu sei o que é sentir que o corpo não responde mais.<br />
-          Já vi mulheres incríveis, inteligentes, fortes... se afogando em cansaço, peso emocional e um espelho que não as representa mais.<br />
-          Aqui na RIGATTI®, a gente não receita fórmulas mágicas.<br />
-          A gente te escuta. A gente cuida da sua bioquímica, da sua energia, da sua verdade.<br />
-          Se você sente que é hora de voltar a ser você, eu te convido a dar esse primeiro passo.”
-        </blockquote>
-        <div className={styles.aboutName}>
-          Dr. Luiz<br />Henrique Rigatti
+    <div style={{backgroundColor: "#fff", paddingTop: "64px", paddingBottom: "64px"}}>
+      <h2 className={styles.aboutTitle}>Quem é o Dr. Rafael Hirsch</h2>
+      <section id="about" className={styles.aboutSection}>
+        <div className={styles.aboutImageWrapper}>
+          <img
+            src="/bio-foto.png"
+            alt="Dr. Luiz Henrique Rigatti"
+            className={styles.aboutImage}
+          />
         </div>
-      </div>
-    </section>
+        <div className={styles.aboutTextWrapper}>
+          <blockquote className={styles.aboutQuote}>
+            Dr. Rafael Hirsch é médico com atuação focada em saúde preventiva, nutrologia e performance metabólica. Formado pela ULBRA e com especialização em Nutrologia Funcional e Terapia Nutricional, construiu sua carreira com um propósito claro: transformar a saúde de forma definitiva, sem promessas rápidas — com ciência, escuta e estratégia.<br/>
+            Com uma abordagem individualizada, ele atende pessoas que buscam mais energia, emagrecimento saudável e equilíbrio hormonal — sem modismos, focando em resultados reais e sustentáveis.
+          </blockquote>
+          <div className={styles.aboutName}>
+            Dr. Rafael Hirsch
+          </div>
+        </div>
+      </section>
+      <span style={{textAlign: "center"}} className={styles.symptomsFeaturesSmall}>“A nova medicina começa com escuta. Aqui, a gente traduz a ciência em transformação real.”</span>
+    </div>
   );
 } 
