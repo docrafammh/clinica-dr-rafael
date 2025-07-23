@@ -1,4 +1,5 @@
 import styles from '../page.module.css';
+import Image from 'next/image';
 
 export default function AboutSection() {
   return (
@@ -6,10 +7,12 @@ export default function AboutSection() {
       <h2 className={styles.aboutTitle}>Quem é o Dr. Rafael Hirsch</h2>
       <section id="about" className={styles.aboutSection}>
         <div className={styles.aboutImageWrapper}>
-          <img
+          <Image
             src="/bio-foto.png"
             alt="Dr. Luiz Henrique Rigatti"
             className={styles.aboutImage}
+            width={500}
+            height={500}
           />
         </div>
         <div className={styles.aboutTextWrapper}>

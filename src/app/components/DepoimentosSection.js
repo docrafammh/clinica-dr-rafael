@@ -53,7 +53,7 @@ export default function DepoimentosSection() {
               }
             >
               <div className={styles.depoimentoTexto}>
-                <p>"{depoimentos[idx].texto}"</p>
+                <p>&quot;{depoimentos[idx].texto}&quot;</p>
                 <span className={styles.depoimentoNome}>- {depoimentos[idx].nome}</span>
               </div>
             </div>
