@@ -1,5 +1,5 @@
+'use client';
 import styles from '../page.module.css';
-import { FaCheck } from "react-icons/fa6";
 import Image from 'next/image';
 
 export default function SymptomsSection() {
@@ -41,7 +41,7 @@ export default function SymptomsSection() {
               <p className={styles.symptomsFeatureText}>
                 Esse não é o seu normal, e dá pra virar essa chave com um método que respeita o seu tempo.
               </p>
-              <button className={styles.symptomsFeatureButton}>
+              <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.symptomsFeatureButton}>
                 <b>Fazer minha análise gratuita agora</b>
               </button>
             </div>
@@ -59,7 +59,7 @@ export default function SymptomsSection() {
               <p className={styles.symptomsFeatureText}>
                 Pode ser que o seu corpo esteja pedindo por algo mais profundo do que uma simples dieta.
               </p>
-              <button className={styles.symptomsFeatureButton}>
+              <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.symptomsFeatureButton}>
                 <b>Fazer minha análise gratuita agora</b>
               </button>
             </div>
@@ -77,7 +77,7 @@ export default function SymptomsSection() {
               <p className={styles.symptomsFeatureText}>
                 Seu corpo está pedindo socorro. E sim, existe um caminho mais leve para viver com energa.
               </p>
-              <button className={styles.symptomsFeatureButton}>
+              <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.symptomsFeatureButton}>
                 <b>Fazer minha análise gratuita agora</b>
               </button>
             </div>

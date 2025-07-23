@@ -1,3 +1,4 @@
+'use client';
 import styles from '../page.module.css';
 
 export default function ProcessSection() {
@@ -27,7 +28,7 @@ export default function ProcessSection() {
         <p className={styles.metodoText}>
           Se algo em você sente que é hora de mudar de verdade, clique abaixo e agende sua conversa, onde vamos te ouvir com profundidade, entender seus bloqueios e te mostrar se o Método <span className={styles.metodoGold}>M.U.D.A.R</span> faz sentido para você.
         </p>
-        <button className={styles.metodoButton}>Começar minha análise</button>
+        <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.metodoButton}>Começar minha análise</button>
       </div>
     </section>
   );

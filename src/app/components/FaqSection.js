@@ -1,3 +1,4 @@
+'use client';
 import styles from '../page.module.css';
 
 export default function FaqSection() {
@@ -7,7 +8,7 @@ export default function FaqSection() {
         <h2 className={styles.faqIntroTitle}>
           Sua próxima versão começa<br />com escuta, ciência e alma.
         </h2>
-        <button className={styles.faqIntroButton}>
+        <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.faqIntroButton}>
           <b>Fazer minha análise gratuita agora</b>
         </button>
         <h3 className={styles.faqIntroSubtitle}>Perguntas frequentes</h3>

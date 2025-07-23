@@ -1,3 +1,4 @@
+'use client';
 import styles from '../page.module.css';
 
 export default function Footer() {
@@ -5,7 +6,7 @@ export default function Footer() {
     <footer className={styles.footerSection}>
       <div className={styles.footerContent}>
         <h2>Sua próxima fase começa agora</h2>
-        <button className={styles.ctaButton}><span className={styles.ctaBold}>Quero fazer minha análise gratuita</span></button>
+        <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.ctaButton}><span className={styles.ctaBold}>Quero fazer minha análise gratuita</span></button>
         {/* <form>
           <input type="text" placeholder="Nome" required/>
           <input type="tel" placeholder="WhatsApp" required/>

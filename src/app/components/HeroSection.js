@@ -1,3 +1,4 @@
+'use client';
 import styles from '../page.module.css';
 import Image from 'next/image';
 
@@ -14,7 +15,7 @@ export default function HeroSection() {
         <p className={styles.paragraph}>
           Diagnóstico gratuito com nosso time. Plano exclusivo para seu caso, sem fórmulas prontas.
         </p>
-        <button className={styles.ctaButton}>
+        <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.ctaButton}>
           <span className={styles.ctaBold}>Fazer minha análise gratuita agora</span>
         </button>
       </section>
