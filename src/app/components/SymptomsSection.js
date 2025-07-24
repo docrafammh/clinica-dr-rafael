@@ -66,7 +66,7 @@ export default function SymptomsSection() {
           </div>
           <div className={styles.symptomsFeatureBlock}>
             <img
-              src="/process3.png"
+              src="/balanca.jpeg"
               alt="Mulher se olhando no espelho"
               className={styles.symptomsFeatureImg}
             />
