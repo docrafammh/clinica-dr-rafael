@@ -19,16 +19,6 @@ export default function HeroSection() {
           <span className={styles.ctaBold}>Fazer minha análise gratuita agora</span>
         </button>
       </section>
-      <section className={styles.rightContent}>
-        <Image
-          src="/dr-rafael-hero.png"
-          alt="Imagem do Doutor Rafael"
-          width={400}
-          height={400}
-          className={styles.heroImage}
-          priority
-        />
-      </section>
     </main>
   );
 } 
