@@ -72,10 +72,11 @@ export default function SymptomsSection() {
             />
             <div className={styles.symptomsFeatureTextGroup}>
               <p className={styles.symptomsFeatureTextGold}>
-                Tem dias em que a exaustão vem até quando a gente não fez nada?
+                Você não nasceu pronta.
+                Mas pode escolher se esculpir, dia após dia.
               </p>
               <p className={styles.symptomsFeatureText}>
-                Seu corpo está pedindo socorro. E sim, existe um caminho mais leve para viver com energa.
+                Seu corpo não precisa de culpa. Ele precisa de cuidado.
               </p>
               <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.symptomsFeatureButton}>
                 <b>Fazer minha análise gratuita agora</b>
