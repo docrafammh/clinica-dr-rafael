@@ -1,24 +1,28 @@
 'use client';
 import styles from '../page.module.css';
-import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <main className={styles.mainContent}>
-      <section id="hero" className={styles.leftContent}>
-        <span className={styles.mainHeadingGold}>Emagreça</span>
-        <h1 className={styles.mainHeading}>Recupere sua energia e seu metabolismo.</h1>
-        <h2 className={styles.smallHeading}>
-          Seu corpo pode voltar a funcionar como antes.<br />
-          com ciência e presença real.<br />
-        </h2>
-        <p className={styles.paragraph}>
-          Diagnóstico gratuito com nosso time. Plano exclusivo para seu caso, sem fórmulas prontas.
-        </p>
-        <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.ctaButton}>
-          <span className={styles.ctaBold}>Fazer minha análise gratuita agora</span>
-        </button>
-      </section>
-    </main>
+    <section className={styles.heroBgSection}>
+      <div className={styles.mainContent}>
+        <div className={styles.leftContent}>
+          <span className={styles.mainHeadingGold} style={{textAlign: 'left'}}>Emagreça</span>
+          <h1 className={styles.mainHeading} style={{textAlign: 'left'}}>Recupere sua energia e seu metabolismo.</h1>
+          <h2 className={styles.smallHeading} style={{textAlign: 'left'}}>
+            Seu corpo pode voltar a funcionar como antes.<br />
+            com ciência e presença real.<br />
+          </h2>
+          <p className={styles.paragraph} style={{textAlign: 'left'}}>
+            Diagnóstico gratuito com nosso time. Plano exclusivo para seu caso, sem fórmulas prontas.
+          </p>
+          <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.ctaButton} style={{alignSelf: 'flex-start'}}>
+            <span className={styles.ctaBold}>Fazer minha análise gratuita agora</span>
+          </button>
+        </div>
+        <div className={styles.rightContent}>
+
+        </div>
+      </div>
+    </section>
   );
 } 
