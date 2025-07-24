@@ -852,7 +852,7 @@
 .heroBgSection {
   width: 100%;
   min-height: 520px;
-  background: linear-gradient(90deg, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 60%, rgba(0,0,0,0.15) 100%), url('/drRafael-bg.jpeg') no-repeat center center;
+  background: linear-gradient(90deg, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.45) 60%, rgba(0,0,0,0.15) 100%), url('/dr-bg-novo.jpeg') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -895,8 +895,9 @@
 }
 @media (max-width: 600px) {
   .heroBgSection {
-    min-height: 320px;
-    background-position: center right;
+    min-height: 38vh;
+    background-position: center center;
+    background-size: cover;
     padding: 0;
   }
   .mainContent {
@@ -904,10 +905,28 @@
     gap: 0;
     padding: 18px 2vw 0 2vw;
     border-radius: 0 0 18px 18px;
+    align-items: center;
+    justify-content: center;
+  }
+  .leftContent > *, .leftContent {
+    text-align: center !important;
+    align-items: center;
   }
   .rightContent {
-    margin-top: 12px;
+    display: none !important;
+  }
+  .leftContent {
+    align-items: center !important;
     justify-content: center;
+    width: 100%;
+  }
+  .leftContent > * {
+    text-align: center !important;
+    align-items: center !important;
+  }
+  .ctaButton {
+    margin: 0 auto !important;
+    display: block;
   }
 }
 
