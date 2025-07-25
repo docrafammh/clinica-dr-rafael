@@ -42,7 +42,7 @@ export default function SymptomsSection() {
                 Esse não é o seu normal, e dá pra virar essa chave com um método que respeita o seu tempo.
               </p>
               <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.symptomsFeatureButton}>
-                <b>Fazer minha análise gratuita agora</b>
+                <b>Fazer minha análise agora</b>
               </button>
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function SymptomsSection() {
                 Pode ser que o seu corpo esteja pedindo por algo mais profundo do que uma simples dieta.
               </p>
               <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.symptomsFeatureButton}>
-                <b>Fazer minha análise gratuita agora</b>
+                <b>Fazer minha análise agora</b>
               </button>
             </div>
           </div>
@@ -79,7 +79,7 @@ export default function SymptomsSection() {
                 Seu corpo não precisa de culpa. Ele precisa de cuidado.
               </p>
               <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.symptomsFeatureButton}>
-                <b>Fazer minha análise gratuita agora</b>
+                <b>Fazer minha análise agora</b>
               </button>
             </div>
           </div>

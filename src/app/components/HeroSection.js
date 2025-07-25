@@ -13,10 +13,11 @@ export default function HeroSection() {
             com ciência e presença real.<br />
           </h2>
           <p className={styles.paragraph} style={{textAlign: 'left'}}>
-            Diagnóstico gratuito com nosso time. Plano exclusivo para seu caso, sem fórmulas prontas.
+            Diagnóstico com nosso time. Plano exclusivo para seu caso, sem fórmulas prontas.
           </p>
+          <span className={styles.mainHeading}>Sua próxima fase começa agora</span>
           <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.ctaButton} style={{alignSelf: 'flex-start'}}>
-            <span className={styles.ctaBold}>Fazer minha análise gratuita agora</span>
+            <span className={styles.ctaBold}>Fazer minha análise agora</span>
           </button>
         </div>
         <div className={styles.rightContent}>

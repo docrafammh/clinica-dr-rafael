@@ -9,7 +9,7 @@ export default function FaqSection() {
           Sua próxima versão começa<br />com escuta, ciência e alma.
         </h2>
         <button onClick={() => window.open('https://form.spotform.com.br/cmdgfvwbw2jvgo6010b9eohg3', '_blank')} className={styles.faqIntroButton}>
-          <b>Fazer minha análise gratuita agora</b>
+          <b>Fazer minha análise agora</b>
         </button>
         <h3 className={styles.faqIntroSubtitle}>Perguntas frequentes</h3>
       </div>
@@ -18,7 +18,7 @@ export default function FaqSection() {
           <details>
             <summary>É uma consulta médica?</summary>
             <p>
-              Não. Essa é uma análise gratuita e inicial, feita pela nossa equipe para entender sua história e avaliar se você está apto(a) para iniciar o protocolo do Dr. Rafael.
+              Não. Essa é uma análise inicial, feita pela nossa equipe para entender sua história e avaliar se você está apto(a) para iniciar o protocolo do Dr. Rafael.
             </p>
           </details>
         </div>

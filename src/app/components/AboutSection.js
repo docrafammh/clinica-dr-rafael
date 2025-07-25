@@ -17,8 +17,8 @@ export default function AboutSection() {
         </div>
         <div className={styles.aboutTextWrapper}>
           <blockquote className={styles.aboutQuote}>
-            Dr. Rafael Hirsch é médico com atuação focada em saúde preventiva, nutrologia e performance metabólica. Formado pela ULBRA e com especialização em Nutrologia Funcional e Terapia Nutricional, construiu sua carreira com um propósito claro: transformar a saúde de forma definitiva, sem promessas rápidas — com ciência, escuta e estratégia.<br/>
-            Com uma abordagem individualizada, ele atende pessoas que buscam mais energia, emagrecimento saudável e equilíbrio hormonal — sem modismos, focando em resultados reais e sustentáveis.
+          Dr. Rafael Hirsch é médico com atuação focada em saúde integrativa e preventiva. Formado pela ULBRA com pós-graduação em Nutrologia Funcional, Terapia Nutricional e Formação em PNL, construiu sua carreira com um propósito claro: transformar a saúde de forma definitiva, sem promessas rápidas, com ciência, escuta e estratégia.
+          Com uma abordagem individualizada, ele atende pessoas que buscam mais energia, emagrecimento saudável e equilíbrio hormonal, sem modismos, focando em resultados reais e sustentáveis.  
           </blockquote>
           <div className={styles.aboutName}>
             Dr. Rafael Hirsch
